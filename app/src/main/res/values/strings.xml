@@ -11,4 +11,10 @@
     <string name="registrar">Registrar</string>
     <string name="acceder">Acceder</string>
     <string name="ingresar">Ingresar</string>
+    <string name="ubicaci_n_actual">Ubicación Actual</string>
+    <string name="latitud">Latitud</string>
+    <string name="longitud">Longitud</string>
+    <string name="altitud">Altitud</string>
+    <string name="direcci_n">Dirección</string>
+    <string name="obtener">Obtener</string>
 </resources>
