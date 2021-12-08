@@ -23,6 +23,8 @@ import java.util.*
 import android.location.Geocoder
 
 class GpsActivity : AppCompatActivity() {
+    // FusedLocationClient proporciona varios métodos para recuperar información sobre la ubicación
+    // del dispositivo
     lateinit var mFusedLocationClient: FusedLocationProviderClient
     private val PERMISSION_ID = 42
     private val REQUIRED_PERMISSIONS_GPS= arrayOf(Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION)
@@ -30,7 +32,8 @@ class GpsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_gps)
-     
+
+        // Verificar permisos
         if (permisosConcedidos()) {
             mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
             localizar()
@@ -101,6 +104,8 @@ class GpsActivity : AppCompatActivity() {
             txt_altitud.text = "ALTITUD = " + ubicacionObtenida.altitude.toString()
         }
     }
+
+
 
     // Verificacion de permisos y ubicacion activa
     private fun ubicacionActiva(): Boolean {

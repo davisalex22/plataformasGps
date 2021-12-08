@@ -82,5 +82,5 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#D17118"
         android:layout_marginTop="35dp"
-        android:text="@string/obtener" />
+        android:text="@string/actualizar" />
 </LinearLayout>
